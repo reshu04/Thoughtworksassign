@@ -1,0 +1,26 @@
+
+Implemented logic for the login utility
+pre-requisite:
+1.We have a Page Object Model inplace with following structure:
+core package-> containing action driver class
+Open and close browser
+Element package-> according to every page in website we have homepageelement .java, Loginpageelement.java.
+property file -> wherein credential details is given.
+
+login(boolean islogin_flag)
+{
+  username= property.getusername();
+  password= property.getpassword();
+  type(username);
+  type(password);
+  Click();
+  if(isloginflag)
+  fluentwait(expected condition till payment_page_image)
+  else{
+  fluentwait(expected condition till home_page_image)
+  }
+  
+}
+
+
+
